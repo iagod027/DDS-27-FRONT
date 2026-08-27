@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(255, 220, 131);
+    /* alinhamento do texto */
+    text-align: center;
+}
+
+/* ESTILIZAÇÃO VIA TAG */
+ul{
+    background-color: rgb(255, 175, 3);
+    /* list-style - muda estilo da lista(pontinhos) */
+    list-style: none;
+    
+}
+
+li{
+    /* cora de fundo */
+    background-color: rgb(255, 206, 100);
+    /* cor  do texto */
+    color: rgb(0, 4, 255);
+    /* largura do elemento */
+    width: 200px;
+    /* altura do elemento  */
+    height: 50px;
+    /* tamanho da fonte */
+    font-size: 30px;
+    /* espaço do elemento pra fora */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    color: midnightblue;
+    font-size: 50px;
+    /* estilo do texto */
+    font-style: italic;
+    /* familia da fonte */
+    font-family: 'Times New Roman', Times, sans-serif;
+}
