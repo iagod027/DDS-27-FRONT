@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* IMPORTAÇÃO DE FONTES DO GOOGLE */
+
+/* VIA URL */
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&display=swap');
+
+body{
+    background-color: blanchedalmond;
+    margin: 20px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* USANDO FONTE VIA URL */
+
+h1{
+  font-weight: 800;
+}
+
+h2{
+  font-weight: 400;
+}
+
+/* ESTILIZAÇÃO DE VÁRIOS ELEMENTOS AO MESMO TEMPO */
+
+h1,h2{
+  font-family: "Asimovian", sans-serif;
+  font-style: normal;
+    color: blue;
+}
+
+/* ESTILAZAÇÃO VIA CLASS */
+.bloco{
+    background-color: burlywood;
+    border: 2px solid darkblue;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* IMPORTAR FONTS DO PROJETO */
+
+@font-face {
+    font-family: "Arbutus";
+    src: url(./fontes/Arbutus.ttf);
+}
+
+/* USANDO A FONTE DO PROJETO */
+
+p{
+    font-family: "Arbutus";
+    font-size: 15px;
+    color: rgb(207, 0, 0);
+}
+
+/* PSEUDO CLASSES */
+a{
+    color: rgb(0, 156, 34);
+}
+
+/* LINKS NÃO VISITADOS */
+a:link{
+    color: rgb(0, 206, 0);
+}
+
+/* LINKS VISITADOS */
+a:visited{
+    color: blueviolet;
+}
+
+/* LINK QUE ESTÁ ATIVO, OU CLICADO */
+a:active{
+    color: orangered;
+}
+
+/* QUANDO PASSA O MOUSE EM CIMA */
+a:hover{
+    color: deeppink;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+/* QUANDO PASSA O MOUSE EM CIMA */
+button:hover{
+    cursor: pointer;
+    background-color: fuchsia;
+    color: white;
+    padding: 5px;
+}
+
+/* BOTÃO QUE ESTÁ ATIVO, QUE ESTÁ CLICADO */
+button:active{
+    transform: scale3d(1.9,0.3,3);
+    transition: 1s;
+}
+
+/* INPUT QUANDO ESTÁ SELECIONADO */
+input:focus{
+    outline: none;
+    border: 2px solid rgb(0, 255, 234);
+    background-color: gold;
+}
+
+/* INPUT QUANDO É OBRIGATÓRIO */
+input:required{
+    border: 2px solid red;
+}
+
+/* QUANDO O PREENCHIMENTO É VÁLIDO */
+input:valid{
+    background-color: rgb(7, 202, 0);
+}
+
+/* QUANDO O PREENCHIMENTO NÃO É VÁLIDO */
+input:invalid{
+    background-color: red;
+}
+
+/* QUANDO O CHECKBOX ESTÁ MARCADO */
+input:checked{
+    accent-color: rgb(0, 255, 234);
+}
+
+/* ESTILIZA OS INPUTS DESABILITADOS */
+input:disabled{
+    background-color: grey;
+    color: darkslategrey;
+}
+
+/* SELECIONA O PRIMEIRO FILHO, VULGO PRIMOGÊNITO, GOHAN */
+.lista-exemplo li:first-child{
+    font-weight: bold;
+    color: lightseagreen;
+}
+
+/* SELECIONA O ÚLTIMO FILHO, VULGO O PREFERIDO, GOTEM */
+.lista-exemplo li:last-child{
+    font-weight: bold;
+    height: 50px;
+    background-image: linear-gradient(red, yellow, green);
+}
+
+/* SELECIONA O ÚLTIMO FILHO, VULGO O PREFERIDO, GOTEM */
+.lista-exemplo li:nth-child(3){
+    background-color: gold;
+}
+
+/* SELECIONA ESPAÇO SEM CONTEÚDO */
+.caixa-vazia:empty{
+    width: 200px;
+    height: 150px;
+    background-color: pink;
+}
+
+/* SELECIONA A PRIMEIRA LETRA DE UM TEXTO */
+.texto-especial::first-letter{
+    color: red;
+    font-size: 50px;
+}
+
+/* SELECIONA A PRIMEIRA LINHA DE UM TEXTO */
+.texto-especial::first-line{
+    color: rgb(255, 102, 0);
+    font-size: 20px;
+}
