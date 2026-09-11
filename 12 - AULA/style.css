@@ -167,3 +167,32 @@ input:disabled{
     color: rgb(255, 102, 0);
     font-size: 20px;
 }
+
+/* PSEUDO ELEMENTOS */
+/* insere itens ANTES dos elementos */
+h2::before{
+    content: " 🍁 ";
+}
+
+/* insere itens DEPOIS dos elementos */
+h2::after{
+    content: " 🍁 ";
+}
+
+/* ESTILIZA O TEXTO DENTRO DOS INPUTS */
+input::placeholder{
+    color:rgb(38, 0, 255);
+    font-style: italic;
+}
+
+/* ESTILIZA O TEXTO SELECIONADO */
+::selection{
+    background-color: linear-gradient(red, yellow, green);
+    color: chartreuse;
+}
+
+.lista-marker li::marker{
+    color: blue;
+    font-size: 35px;
+    content: "👌";
+}
