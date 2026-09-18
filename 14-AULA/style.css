@@ -185,7 +185,7 @@ p{
     padding: 15px;
 }
 
-.flex-direction-row di, .flex-direction-column div{
+.flex-direction-row div, .flex-direction-column div{
     background-color: var(--color-primary);
     color: var(--color-white);
     padding: 15px;
@@ -272,4 +272,69 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* GRID */
+.exemplo-grid{
+    display: grid;
+    gap: var(--gap);
+   /* grid-template-columns: 30% 70%;
+    grid-template-rows: 200px 80px 600px; */
+    grid-template: 1fr 1fr 1fr / 3fr 7fr;
+    /*   template:   linhas   /  colunas */
+}
+
+.exemplo-grid div{
+    background-color: palevioletred;
+    color: var(--color-white);
+    padding: 30px;
+    text-align: center;
+}
+
+/* GRID-TEMPLATE */
+
+/* GRID-2-COLUNAS */
+/* PAI */
+.grid-duas-colunas{
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 80px 80px;
+}
+/* FILHO */
+.grid-duas-colunas div{
+    background-color: rgb(17, 59, 175);
+    color: var(--color-white);
+    padding: 30px;
+    text-align: center;
+}
+
+
+/* GRID-4-COLUNAS */
+/* PAI */
+.grid-quatro-colunas{
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 50x 50px 50px;
+}
+/* FILHO */
+.grid-quatro-colunas div{
+    background-color: rgb(92, 23, 172);
+    color: var(--color-white);
+    padding: 30px;
+    text-align: center;
+}
+
+/* REPONSIVIDADE */
+@media (max-width: 700px) {
+    .exemplo-inline-block div{
+        width: 85%;
+        margin-bottom: 12px;
+    }
+
+    .grid-duas-colunas{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
