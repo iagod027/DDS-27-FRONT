@@ -1,3 +1,142 @@
+/* Configurações Gerais e Cores Base do Wireframe */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #006eff;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Container Principal (Fundo Cinza Escuro do Wireframe) */
+.container {
+    width: 100%;
+    max-width: 960px;
+    background-color: #0099ff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilo comum para os blocos cinza claro */
+.block {
+    background-color: #0077ff;
+    border: 1px solid #999999;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end; /* Alinha o texto no canto inferior esquerdo como na imagem */
+    font-size: 14px;
+    min-height: 80px;
+}
+
+/* SEÇÃO: TOPO */
+.header {
+    display: flex;
+    gap: 20px;
+}
+
+.logo {
+    flex: 1;
+    min-height: 120px;
+}
+
+.menu {
+    flex: 2;
+    align-self: flex-start; /* Mantém o menu alinhado ao topo */
+    min-height: 50px;
+}
+
+/* SEÇÃO: CONTEÚDO */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.video {
+    min-height: 300px;
+}
+
+.side-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social {
+    flex: 1;
+}
+
+.login {
+    flex: 1;
+}
+
+.apoio {
+    min-height: 120px;
+}
+
+/* SEÇÃO: RODAPÉ */
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.footer-col {
+    min-height: 250px;
+}
+
+.copyright {
+    text-align: left;
+    font-size: 12px;
+    color: #444444;
+    padding-top: 10px;
+}
+
+/* Responsividade para telas menores (Celulares) */
+@media (max-width: 768px) {
+    .header, .main-grid, .footer-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menu {
+        align-self: stretch;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 *{
     margin: 0px;
     padding: 0px;
