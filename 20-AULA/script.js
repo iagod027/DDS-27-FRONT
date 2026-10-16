@@ -24,4 +24,7 @@ aluno1 ={
 
 console.log(aluno1);
 
+
+
+
 console.log(console);
